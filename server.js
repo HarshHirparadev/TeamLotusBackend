@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: 'http://localhost:8081',
+    origin: ['http://localhost:8081','http://192.168.2.36:8081','http://192.168.2.36:3000','http://192.168.2.36:3000/graphql'],
     credentials: true,
   })
 );
